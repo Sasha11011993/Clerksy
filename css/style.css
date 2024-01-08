@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Recoleta";
+  src: url("../fonts/recoleta-semibold-webfont.eot");
+  src: url("../fonts/recoleta-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/recoleta-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/recoleta-semibold-webfont.woff") format("woff"),
+    url("../fonts/recoleta-semibold-webfont.ttf") format("truetype"),
+    url("../fonts/recoleta-semibold-webfont.svg#recoletasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  max-width: 1168px;
+  margin: auto;
+}
+
+header {
+  background: #163a24;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+header nav ul li a {
+  color: #fbfaf7;
+  text-align: right;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header nav ul li:last-of-type a {
+  border-radius: 160px;
+  background: #198c36;
+  padding: 15px 25px;
+}
+
+.hero {
+  background: #163a24;
+  padding: 120px 0 129px;
+}
+.hero .container {
+  display: flex;
+  position: relative;
+}
+
+.hero h1 {
+  color: #fbfaf7;
+  font-family: Recoleta;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 65.25px; /* 135.938% */
+  max-width: 391px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  color: #fbfaf7;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  max-width: 475px;
+}
+
+.hero img {
+  position: absolute;
+  top: -120px;
+  right: -54px;
+}

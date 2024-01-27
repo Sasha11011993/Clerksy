@@ -57,7 +57,7 @@ header nav ul li:last-of-type a:hover {
 /* --------------HERO------------- */
 
 .hero {
-  background: #163a24;
+  background-color: #163a24;
   padding: 120px 0 129px;
 }
 .hero .container {
@@ -421,22 +421,16 @@ header nav ul li:last-of-type a:hover {
   justify-content: space-between;
 }
 
-.easy--container--1 {
-  display: flex;
-  gap: 28px;
-}
-
-.easy--container article,
-.easy--container--1 article {
+.easy--container article {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 13px;
   width: 262px;
+  position: relative;
 }
 
-.easy--container--1 p,
-.consider--container p {
+.easy--container p {
   color: #163a24;
   text-align: center;
   font-family: "Noto Sans";
@@ -446,7 +440,6 @@ header nav ul li:last-of-type a:hover {
   line-height: 27px; /* 150% */
 }
 
-.easy--container--1 span,
 .easy--container span {
   color: #163a24;
   text-align: center;
@@ -457,7 +450,29 @@ header nav ul li:last-of-type a:hover {
   line-height: 31.5px; /* 112.5% */
 }
 
-.easy--container article:last-child {
+.easy--container article:first-of-type:after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow-1.svg);
+  width: 75px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -103px;
+}
+
+.easy--container article:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow-2.svg);
+  width: 75px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -103px;
+}
+
+.easy--container article:last-of-type {
   background-image: url(../images/easy.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -466,16 +481,13 @@ header nav ul li:last-of-type a:hover {
   padding-top: 25px;
 }
 
-.easy--container article:last-child p {
+.easy--container article:last-of-type p {
   margin-bottom: 15px;
+  width: 262px;
 }
 
-.easy--container article:last-child span {
+.easy--container article:last-of-type span {
   font-size: 30px;
-}
-
-.easy--container article:last-child p,
-.easy--container article:last-child span {
   width: 262px;
 }
 
@@ -558,20 +570,26 @@ header nav ul li:last-of-type a:hover {
 
 .started {
   background: #163a24;
-}
-
-.started .container {
-  max-width: 1440px;
-  padding-top: 114px;
-  padding-bottom: 124px;
-}
-
-.started .container {
   background-image: url(../images/started-left.png),
     url(../images/started-right.png);
   background-repeat: no-repeat;
   background-position: bottom left, right bottom;
+  padding-top: 114px;
+  padding-bottom: 124px;
 }
+
+/* .started .container {
+  max-width: 1440px;
+  padding-top: 114px;
+  padding-bottom: 124px;
+} */
+
+/* .started .container {
+  background-image: url(../images/started-left.png),
+    url(../images/started-right.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, right bottom;
+} */
 
 .started h2 {
   color: #fbfaf7;

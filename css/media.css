@@ -1,0 +1,299 @@
+@media screen and (max-width: 428px) {
+  /* --------------HEADER------------- */
+
+  header .container {
+    justify-content: space-around;
+  }
+
+  header img {
+    width: 133px;
+    height: 38px;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
+  }
+
+  header nav ul li:last-of-type a {
+    padding: 5px 15px;
+  }
+
+  /* --------------HERO------------- */
+
+  .hero {
+    padding: 60px 0;
+    /* background-image: url(../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom; */
+  }
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    text-align: center;
+    line-height: 54px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .hero img {
+    /* display: none; */
+    top: 0;
+    right: 0;
+    position: relative;
+    height: 300px;
+  }
+
+  /* --------------PUT------------- */
+
+  .put {
+    padding-top: 60px;
+  }
+
+  .put .container {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .put article {
+    text-align: center;
+  }
+
+  .put h2 {
+    margin-bottom: 10px;
+  }
+
+  /* --------------PLAY------------- */
+
+  .play .container {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .play--text {
+    order: 2;
+  }
+
+  .play h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .play p {
+    text-align: center;
+  }
+
+  .play img {
+    order: 1;
+  }
+
+  /* --------------PARTNER------------- */
+
+  .partner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .partner h2 {
+    margin-bottom: 30px;
+  }
+
+  .partner--container--img {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .partner img {
+    width: 90px;
+  }
+
+  /* --------------PRODUCTION------------- */
+
+  .production {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .production h2 {
+    margin-bottom: 30px;
+  }
+
+  .production--art {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .production--art article {
+    width: 200px;
+  }
+
+  /* --------------EMPLOYEES------------- */
+
+  .employees {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* --------------SCENES------------- */
+
+  .scenes {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .scenes .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .scenes h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .scenes p {
+    text-align: center;
+  }
+
+  /* --------------CONSIDER------------- */
+
+  .consider {
+    padding-bottom: 60px;
+  }
+
+  .consider--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consider article {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 36px;
+  }
+
+  .consider h2 {
+    margin-bottom: 10px;
+  }
+
+  /* --------------EASY------------- */
+
+  .easy {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .easy--container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+  }
+
+  .easy--container article:first-of-type:after {
+    right: 90px;
+    top: 120px;
+  }
+
+  .easy--container article:nth-of-type(2):after {
+    right: 90px;
+    top: 120px;
+  }
+
+  .easy--container article:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  /* --------------JUST------------- */
+
+  .just {
+    padding: 60px 0;
+  }
+
+  .just .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .just article {
+    margin-bottom: 10px;
+  }
+
+  /* --------------STARTED------------- */
+
+  .started {
+    background: #163a24;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/started-left.png),
+      url(../images/started-right.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, right bottom;
+    background-size: 200px 200px;
+  }
+
+  /* --------------STAY------------- */
+
+  .stay {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .stay .container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stay h2 {
+    margin-bottom: 15px;
+  }
+
+  .stay form {
+    max-width: 400px;
+  }
+
+  .stay input[type="submit"] {
+    right: 0;
+  }
+
+  /* --------------FOOTER------------- */
+
+  footer {
+    padding: 60px 0;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer--cont--top {
+    padding: 10px 0;
+  }
+  .footer--cont--top p {
+    font-size: 24px;
+    line-height: 25px; /* 150% */
+  }
+
+  .footer--cont--bottom article {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .footer--cont--bottom p {
+    width: 45%;
+  }
+}

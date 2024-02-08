@@ -1,4 +1,8 @@
 @media screen and (max-width: 428px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   /* --------------HEADER------------- */
 
   header .container {
@@ -107,7 +111,7 @@
 
   .partner--container--img {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
   }
 
   .partner img {

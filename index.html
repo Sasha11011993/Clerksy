@@ -11,11 +11,46 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile_menu.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <header>
+    <header class="cd-header">
+      <div class="container">
+        <a href=""><img src="./images/logo.svg" alt="logo" /></a>
+        <nav class="cd-3d-nav-container">
+          <ul class="cd-3d-nav">
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">844-332-6440</a></li>
+            <li><a href="#">Get Started</a></li>
+          </ul>
+
+          <span class="cd-marker color-1"></span>
+        </nav>
+        <a href="#0" class="cd-3d-nav-trigger">
+          Menu
+          <span></span>
+        </a>
+      </div>
+    </header>
+    <!-- .cd-header -->
+
+    <!-- <nav class="cd-3d-nav-container">
+      <ul class="cd-3d-nav">
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">844-332-6440</a></li>
+        <li><a href="#">Get Started</a></li>
+      </ul>
+      
+
+      <span class="cd-marker color-1"></span>
+    </nav> -->
+    <!-- .cd-3d-nav-container -->
+
+    <!-- <header>
       <div class="container">
         <a href=""><img src="./images/logo.svg" alt="logo" /></a>
         <nav>
@@ -26,7 +61,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="hero">
@@ -91,7 +126,8 @@
       <section class="production">
         <div class="container">
           <h2>HR Production of the Highest Quality</h2>
-          <div class="production--art">
+          <div class="owl-carousel">
+            <!-- <div class="production--art"> -->
             <article>
               <img src="./images/educates.svg" alt="educates" />
               <p>Educates & Informs</p>
@@ -112,6 +148,8 @@
               <p>Create a Healthy</p>
               <p>Work Environment</p>
             </article>
+
+            <!-- </div> -->
           </div>
         </div>
       </section>
@@ -269,5 +307,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

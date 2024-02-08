@@ -10,6 +10,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  background: #163a24;
+}
+
+main,
+footer {
+  background-color: white;
+}
 .container {
   max-width: 1168px;
   margin: auto;
@@ -54,6 +63,10 @@ header nav ul li:last-of-type a:hover {
   background: #025116;
 }
 
+.cd-3d-nav li {
+  width: 33.3%;
+}
+
 /* --------------HERO------------- */
 
 .hero {
@@ -67,11 +80,6 @@ header nav ul li:last-of-type a:hover {
 
 .hero h1 {
   color: #fbfaf7;
-  font-family: Recoleta;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 65.25px; /* 135.938% */
   max-width: 391px;
   margin-bottom: 18px;
 }
@@ -200,17 +208,32 @@ header nav ul li:last-of-type a:hover {
   margin-bottom: 67px;
 }
 
-.production--art {
+.owl-carousel {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.production--art article {
+.owl-carousel article {
   width: 295px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+.owl-carousel .owl-item img {
+  /* max-width: 295px; */
+  width: auto;
+}
+
+/* .owl-carousel article {
+  width: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
 
 .production img {
   margin-bottom: 28px;

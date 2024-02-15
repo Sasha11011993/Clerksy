@@ -34,7 +34,7 @@
 @media screen and (max-width: 508px) {
   .cd-logo {
     float: left;
-    margin-top: 28px;
+    margin-top: 0;
   }
 
   .cd-3d-nav-trigger {
@@ -295,7 +295,7 @@
     bottom: 0;
     left: 0;
     height: 3px;
-    width: 20%;
+    width: 29%;
     background-color: currentColor;
     -webkit-transform-origin: center bottom;
     -moz-transform-origin: center bottom;

@@ -149,22 +149,21 @@ header {
 .put {
   padding-top: 120px;
 
-  & .container {
+  .container {
     display: flex;
     gap: 99px;
     justify-content: center;
     align-items: center;
+  }
+  h2 {
+    @include h2;
+    margin-bottom: 27px;
+    max-width: 325px;
+  }
 
-    h2 {
-      @include h2;
-      margin-bottom: 27px;
-      max-width: 325px;
-    }
-
-    p {
-      @include p;
-      max-width: 374px;
-    }
+  p {
+    @include p;
+    max-width: 374px;
   }
 }
 
@@ -176,17 +175,16 @@ header {
     gap: 99px;
     justify-content: center;
     align-items: center;
+  }
+  h2 {
+    @include h2;
+    margin-bottom: 27px;
+    max-width: 376px;
+  }
 
-    h2 {
-      @include h2;
-      margin-bottom: 27px;
-      max-width: 376px;
-    }
-
-    p {
-      @include p;
-      max-width: 380px;
-    }
+  p {
+    @include p;
+    max-width: 380px;
   }
 }
 

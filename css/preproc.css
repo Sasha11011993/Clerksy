@@ -106,7 +106,7 @@ header .cd-3d-nav-trigger {
   justify-content: center;
   align-items: center;
 }
-.put .container h2 {
+.put h2 {
   color: #163a24;
   font-family: Recoleta;
   font-size: 48px;
@@ -116,7 +116,7 @@ header .cd-3d-nav-trigger {
   margin-bottom: 27px;
   max-width: 325px;
 }
-.put .container p {
+.put p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 18px;
@@ -133,7 +133,7 @@ header .cd-3d-nav-trigger {
   justify-content: center;
   align-items: center;
 }
-.play .container h2 {
+.play h2 {
   color: #163a24;
   font-family: Recoleta;
   font-size: 48px;
@@ -143,7 +143,7 @@ header .cd-3d-nav-trigger {
   margin-bottom: 27px;
   max-width: 376px;
 }
-.play .container p {
+.play p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 18px;

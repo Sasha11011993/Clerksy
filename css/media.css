@@ -12,10 +12,13 @@
 
   header .container nav ul li a {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   header .container nav ul li:last-of-type a {
-    padding: 5px 15px;
+    padding: 0;
   }
 
   header .cd-3d-nav-trigger {
@@ -116,10 +119,6 @@
     gap: 30px;
   }
 
-  .partner img {
-    width: 90px;
-  }
-
   /* --------------PRODUCTION------------- */
 
   .production {
@@ -129,12 +128,6 @@
 
   .production h2 {
     margin-bottom: 30px;
-  }
-
-  .production--art {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
   }
 
   .production--art article {
@@ -180,7 +173,7 @@
     padding-bottom: 60px;
   }
 
-  .consider--container {
+  .consider .consider--container {
     flex-direction: column;
     align-items: center;
   }
@@ -202,23 +195,24 @@
     padding-bottom: 60px;
   }
 
-  .easy--container {
+  .easy .easy--container {
     flex-direction: column;
     gap: 50px;
     padding: 0;
   }
 
-  .easy--container article:first-of-type:after {
+  .easy .easy--container article:first-of-type:after {
     right: 90px;
     top: 120px;
   }
 
-  .easy--container article:nth-of-type(2):after {
+  .easy .easy--container article:nth-of-type(2):after {
     right: 90px;
-    top: 120px;
+    top: 110px;
+    transform: rotate(180deg);
   }
 
-  .easy--container article:last-of-type {
+  .easy .easy--container article:last-of-type {
     margin-bottom: 10px;
   }
 
@@ -270,11 +264,11 @@
     margin-bottom: 15px;
   }
 
-  .stay form {
+  .stay .form--container form {
     max-width: 400px;
   }
 
-  .stay input[type="submit"] {
+  .stay .form--container button {
     right: 0;
   }
 

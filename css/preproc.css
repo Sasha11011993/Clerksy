@@ -1,24 +1,23 @@
+@import "../css/reset.css";
+@import "../css/owl.carousel.css";
+@import "../css/owl.theme.default.css";
+@import "../css/mobile_menu.css";
 @font-face {
   font-family: "Recoleta";
   src: url("../fonts/recoleta-semibold-webfont.eot");
-  src: url("../fonts/recoleta-semibold-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/recoleta-semibold-webfont.woff2") format("woff2"),
-    url("../fonts/recoleta-semibold-webfont.woff") format("woff"),
-    url("../fonts/recoleta-semibold-webfont.ttf") format("truetype"),
-    url("../fonts/recoleta-semibold-webfont.svg#recoletasemibold") format("svg");
+  src: url("../fonts/recoleta-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/recoleta-semibold-webfont.woff2") format("woff2"), url("../fonts/recoleta-semibold-webfont.woff") format("woff"), url("../fonts/recoleta-semibold-webfont.ttf") format("truetype"), url("../fonts/recoleta-semibold-webfont.svg#recoletasemibold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   background: #163a24;
 }
 
 main,
 footer {
-  background-color: white;
+  background-color: #fbfaf7;
 }
+
 .container {
   max-width: 1180px;
   margin: auto;
@@ -27,24 +26,29 @@ footer {
 }
 
 /* --------------HEADER------------- */
-
 header {
   background: #163a24;
   padding: 20px 0;
 }
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-header nav ul {
+header .container nav ul {
   display: flex;
   gap: 24px;
 }
-
-header nav ul li a {
+header .container nav ul li:last-of-type a {
+  border-radius: 160px;
+  background: #198c36;
+  padding: 15px 25px;
+  transition: 0.3s;
+}
+header .container nav ul li:last-of-type:hover a {
+  background: #025116;
+}
+header .container nav ul li a {
   color: #fbfaf7;
   text-align: right;
   font-family: Noto Sans;
@@ -53,20 +57,11 @@ header nav ul li a {
   font-weight: 400;
   line-height: normal;
 }
-
-header nav ul li:last-of-type a {
-  border-radius: 160px;
-  background: #198c36;
-  padding: 15px 25px;
-  transition: 0.3s;
-}
-
-header nav ul li:last-of-type a:hover {
-  background: #025116;
+header .cd-3d-nav-trigger {
+  display: none;
 }
 
 /* --------------HERO------------- */
-
 .hero {
   background-color: #163a24;
   padding: 120px 0 129px;
@@ -75,7 +70,6 @@ header nav ul li:last-of-type a:hover {
   display: flex;
   position: relative;
 }
-
 .hero h1 {
   color: #fbfaf7;
   max-width: 391px;
@@ -87,7 +81,6 @@ header nav ul li:last-of-type a:hover {
   letter-spacing: 0%;
   text-align: left;
 }
-
 .hero p {
   color: #fbfaf7;
   font-family: Noto Sans;
@@ -97,7 +90,6 @@ header nav ul li:last-of-type a:hover {
   line-height: 27px; /* 150% */
   max-width: 475px;
 }
-
 .hero img {
   position: absolute;
   top: -120px;
@@ -105,19 +97,16 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------PUT------------- */
-
 .put {
   padding-top: 120px;
 }
-
 .put .container {
   display: flex;
   gap: 99px;
   justify-content: center;
   align-items: center;
 }
-
-.put h2 {
+.put .container h2 {
   color: #163a24;
   font-family: Recoleta;
   font-size: 48px;
@@ -127,8 +116,7 @@ header nav ul li:last-of-type a:hover {
   margin-bottom: 27px;
   max-width: 325px;
 }
-
-.put p {
+.put .container p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 18px;
@@ -139,15 +127,13 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------PLAY------------- */
-
 .play .container {
   display: flex;
   gap: 99px;
   justify-content: center;
   align-items: center;
 }
-
-.play h2 {
+.play .container h2 {
   color: #163a24;
   font-family: Recoleta;
   font-size: 48px;
@@ -157,8 +143,7 @@ header nav ul li:last-of-type a:hover {
   margin-bottom: 27px;
   max-width: 376px;
 }
-
-.play p {
+.play .container p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 18px;
@@ -169,14 +154,11 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------PARTNER------------- */
-
 .partner {
   padding-top: 113px;
   padding-bottom: 121px;
 }
-
 .partner h2 {
-  color: #163a24;
   text-align: center;
   font-family: Recoleta;
   font-size: 48px;
@@ -185,8 +167,7 @@ header nav ul li:last-of-type a:hover {
   line-height: 54px; /* 112.5% */
   margin-bottom: 66px;
 }
-
-.partner--container--img {
+.partner .partner--container--img {
   display: flex;
   gap: 86px;
   justify-content: center;
@@ -194,113 +175,94 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------PRODUCTION------------- */
-
 .production {
   padding-top: 66px;
   padding-bottom: 154px;
   background: #163a24;
 }
-
 .production h2 {
-  color: #fbfaf7;
-  text-align: center;
+  color: #163a24;
   font-family: Recoleta;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 54px; /* 112.5% */
+  text-align: center;
   margin-bottom: 67px;
+  color: #fbfaf7;
 }
-
-.owl-carousel {
+.production .owl-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.owl-carousel article {
+.production .owl-carousel article {
   width: 295px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.owl-carousel .owl-item img {
+.production .owl-carousel .owl-item img {
   /* max-width: 295px; */
   width: auto;
 }
-
-/* .owl-carousel article {
-  width: 295px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
 .production img {
   margin-bottom: 28px;
 }
-
 .production p {
-  color: #fbfaf7;
-  text-align: center;
-  font-family: Noto Sans;
+  color: #163a24;
+  font-family: "Noto Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
+  text-align: center;
+  color: #fbfaf7;
 }
 
 /* --------------EMPLOYEES------------- */
-
 .employees {
   padding-top: 114px;
   padding-bottom: 135px;
   background: #f2efe6;
 }
-
 .employees h2 {
-  max-width: 739px;
-  margin: auto;
   color: #163a24;
-  text-align: center;
   font-family: Recoleta;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 54px; /* 112.5% */
   margin-bottom: 27px;
-}
-
-.employees p {
-  max-width: 760px;
+  max-width: 739px;
   margin: auto;
-  color: #163a24;
   text-align: center;
-  font-family: Noto Sans;
+}
+.employees p {
+  color: #163a24;
+  font-family: "Noto Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
   margin-bottom: 2px;
 }
 
 /* --------------SCENES------------- */
-
 .scenes {
   padding-top: 180px;
   padding-bottom: 114px;
 }
-
 .scenes .container {
   display: flex;
   gap: 99px;
   justify-content: center;
   align-items: center;
 }
-
 .scenes h2 {
   color: #163a24;
   font-family: Recoleta;
@@ -311,7 +273,6 @@ header nav ul li:last-of-type a:hover {
   margin-bottom: 27px;
   max-width: 338px;
 }
-
 .scenes p {
   color: #163a24;
   font-family: "Noto Sans";
@@ -323,40 +284,35 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------CONSIDER------------- */
-
 .consider {
   padding-bottom: 120px;
 }
-
 .consider h2 {
   color: #163a24;
-  text-align: center;
   font-family: Recoleta;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 54px; /* 112.5% */
+  text-align: center;
   margin-bottom: 26px;
 }
-
 .consider p {
   color: #163a24;
-  text-align: center;
   font-family: "Noto Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
+  text-align: center;
   margin-bottom: 18px;
 }
-
-.consider--container {
+.consider .consider--container {
   display: flex;
   justify-content: center;
   gap: 40px;
   align-items: start;
 }
-
 .consider article {
   border-radius: 15px;
   background: #fbfaf7;
@@ -367,11 +323,9 @@ header nav ul li:last-of-type a:hover {
   padding-left: 40px;
   padding-bottom: 66px;
 }
-
 .consider img {
   margin-bottom: 20px;
 }
-
 .consider h3 {
   color: #163a24;
   font-family: Recoleta;
@@ -381,14 +335,12 @@ header nav ul li:last-of-type a:hover {
   line-height: 31.5px; /* 112.5% */
   margin-bottom: 23px;
 }
-
 .consider ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-.consider li {
+.consider ul li {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 16px;
@@ -398,8 +350,7 @@ header nav ul li:last-of-type a:hover {
   padding-left: 25px;
   position: relative;
 }
-
-.consider li::before {
+.consider ul li::before {
   position: absolute;
   content: "";
   width: 8px;
@@ -412,43 +363,38 @@ header nav ul li:last-of-type a:hover {
 }
 
 /* --------------EASY------------- */
-
 .easy {
   padding-top: 114px;
   padding-bottom: 124px;
   background: #f2efe6;
 }
-
 .easy h2 {
   color: #163a24;
-  text-align: center;
   font-family: Recoleta;
-  font-size: 47px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 54px; /* 114.894% */
+  line-height: 54px; /* 112.5% */
+  text-align: center;
   margin-bottom: 26px;
 }
-
 .easy p {
   color: #163a24;
-  text-align: center;
   font-family: "Noto Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 150% */
+  text-align: center;
 }
-
-.easy--container {
+.easy .easy--container {
   margin-top: 18px;
   display: flex;
   align-items: center;
   padding: 23px 46px 23px 0;
   justify-content: space-between;
 }
-
-.easy--container article {
+.easy .easy--container article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -456,28 +402,7 @@ header nav ul li:last-of-type a:hover {
   width: 262px;
   position: relative;
 }
-
-.easy--container p {
-  color: #163a24;
-  text-align: center;
-  font-family: "Noto Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px; /* 150% */
-}
-
-.easy--container span {
-  color: #163a24;
-  text-align: center;
-  font-family: Recoleta;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 31.5px; /* 112.5% */
-}
-
-.easy--container article:first-of-type:after {
+.easy .easy--container article:first-of-type:after {
   content: "";
   position: absolute;
   background-image: url(../images/arrow-1.svg);
@@ -487,8 +412,7 @@ header nav ul li:last-of-type a:hover {
   transform: translateY(-50%);
   right: -103px;
 }
-
-.easy--container article:nth-of-type(2):after {
+.easy .easy--container article:nth-of-type(2):after {
   content: "";
   position: absolute;
   background-image: url(../images/arrow-2.svg);
@@ -498,8 +422,7 @@ header nav ul li:last-of-type a:hover {
   transform: translateY(-50%);
   right: -103px;
 }
-
-.easy--container article:last-of-type {
+.easy .easy--container article:last-of-type {
   background-image: url(../images/easy.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -507,17 +430,32 @@ header nav ul li:last-of-type a:hover {
   height: 179px;
   padding-top: 25px;
 }
-
-.easy--container article:last-of-type p {
+.easy .easy--container article:last-of-type p {
   margin-bottom: 15px;
   width: 262px;
 }
-
-.easy--container article:last-of-type span {
+.easy .easy--container article:last-of-type span {
   font-size: 30px;
   width: 262px;
 }
-
+.easy .easy--container p {
+  color: #163a24;
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  text-align: center;
+}
+.easy .easy--container span {
+  color: #163a24;
+  text-align: center;
+  font-family: Recoleta;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31.5px; /* 112.5% */
+}
 .easy a {
   display: block;
   margin: auto;
@@ -534,28 +472,23 @@ header nav ul li:last-of-type a:hover {
   padding: 15px 25px;
   transition: 0.3s;
 }
-
 .easy a:hover {
   background: #025116;
 }
 
 /* --------------JUST------------- */
-
 .just {
   padding: 120px 0;
 }
-
 .just .container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 98px;
 }
-
 .just article {
   max-width: 393px;
 }
-
 .just h2 {
   color: #163a24;
   font-family: Recoleta;
@@ -565,7 +498,6 @@ header nav ul li:last-of-type a:hover {
   line-height: 54px; /* 112.5% */
   margin-bottom: 25px;
 }
-
 .just p {
   color: #163a24;
   font-family: "Noto Sans";
@@ -575,7 +507,6 @@ header nav ul li:last-of-type a:hover {
   line-height: 27px; /* 150% */
   margin-bottom: 34px;
 }
-
 .just a {
   color: #fbfaf7;
   font-family: "Noto Sans";
@@ -588,58 +519,29 @@ header nav ul li:last-of-type a:hover {
   padding: 15px 25px;
   transition: 0.3s;
 }
-
 .just a:hover {
   background: #025116;
 }
 
 /* --------------STARTED------------- */
-
 .started {
   background: #163a24;
-  background-image: url(../images/started-left.png),
-    url(../images/started-right.png);
+  background-image: url(../images/started-left.png), url(../images/started-right.png);
   background-repeat: no-repeat;
   background-position: bottom left, right bottom;
   padding-top: 114px;
   padding-bottom: 124px;
 }
-
-/* .started .container {
-  max-width: 1440px;
-  padding-top: 114px;
-  padding-bottom: 124px;
-} */
-
-/* .started .container {
-  background-image: url(../images/started-left.png),
-    url(../images/started-right.png);
-  background-repeat: no-repeat;
-  background-position: bottom left, right bottom;
-} */
-
 .started h2 {
   color: #fbfaf7;
   text-align: center;
-  font-family: Recoleta;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 54px; /* 112.5% */
   margin-bottom: 26px;
 }
-
 .started p {
   color: #fbfaf7;
   text-align: center;
-  font-family: "Noto Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px; /* 150% */
   margin-bottom: 33px;
 }
-
 .started a {
   color: #163a24;
   text-align: center;
@@ -656,19 +558,16 @@ header nav ul li:last-of-type a:hover {
   width: 258px;
   transition: 0.3s;
 }
-
 .started a:hover {
   background: #e05532;
 }
 
 /* --------------STAY------------- */
-
 .stay {
   background: #f2efe6;
   padding-top: 54px;
   padding-bottom: 79px;
 }
-
 .stay h2 {
   color: #163a24;
   font-family: Recoleta;
@@ -678,7 +577,6 @@ header nav ul li:last-of-type a:hover {
   line-height: 54px; /* 112.5% */
   margin-bottom: 26px;
 }
-
 .stay p {
   color: #163a24;
   font-family: "Noto Sans";
@@ -687,28 +585,24 @@ header nav ul li:last-of-type a:hover {
   font-weight: 400;
   line-height: 27px; /* 150% */
 }
-
 .stay .container {
   display: flex;
   gap: 248px;
 }
-
-.stay form {
-  max-width: 590px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.form--container {
+.stay .form--container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 11px;
   flex-direction: column;
 }
-
-.stay input[type="text"] {
+.stay .form--container form {
+  max-width: 590px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.stay .form--container form input[type=text] {
   width: 590px;
   height: 52px;
   border-radius: 255px;
@@ -718,12 +612,10 @@ header nav ul li:last-of-type a:hover {
   padding-right: 90px;
   transition: 0.3s;
 }
-
-.stay input[type="text"]:hover {
+.stay .form--container form input[type=text]:hover {
   border-color: #e05532;
 }
-
-.stay input::placeholder {
+.stay .form--container form input[type=text]::-moz-placeholder {
   color: black;
   font-family: "Noto Sans";
   font-size: 16px;
@@ -732,12 +624,22 @@ header nav ul li:last-of-type a:hover {
   line-height: normal;
   opacity: 0.5;
 }
-
-.stay input:hover::placeholder {
+.stay .form--container form input[type=text]::placeholder {
+  color: black;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+.stay .form--container form input[type=text]:hover::-moz-placeholder {
   color: #e05532;
 }
-
-.stay button {
+.stay .form--container form input[type=text]:hover::placeholder {
+  color: #e05532;
+}
+.stay .form--container button {
   color: #fbfaf7;
   text-align: center;
   font-family: "Noto Sans";
@@ -752,12 +654,10 @@ header nav ul li:last-of-type a:hover {
   right: -37px;
   transition: 0.3s;
 }
-
-.stay button:hover {
+.stay .form--container button:hover {
   background: #025116;
 }
-
-.form--container p {
+.stay .form--container p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 14px;
@@ -766,22 +666,19 @@ header nav ul li:last-of-type a:hover {
   line-height: 21px; /* 150% */
   max-width: 524px;
 }
-
-.form--link {
+.stay .form--container .form--link {
   color: #198c36;
+  transition: 0.3s;
 }
-
-.form--link:hover {
+.stay .form--container .form--link:hover {
   color: #025116;
 }
 
 /* --------------FOOTER------------- */
-
 footer {
   padding-top: 20px;
 }
-
-.footer--cont--top {
+footer .footer--cont--top {
   padding: 21px 0;
   display: flex;
   align-items: center;
@@ -789,23 +686,7 @@ footer {
   position: relative;
   margin-bottom: 31px;
 }
-
-.footer--cont--top article {
-  display: flex;
-  gap: 14px;
-}
-
-.footer--cont--top p {
-  color: #163a24;
-  text-align: center;
-  font-family: Recoleta;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 36px; /* 150% */
-}
-
-.footer--cont--top::after {
+footer .footer--cont--top::after {
   position: absolute;
   content: "";
   max-width: 1168px;
@@ -814,20 +695,30 @@ footer {
   background: #f2efe6;
   bottom: -25px;
 }
-
-.footer--cont--bottom {
+footer .footer--cont--top article {
+  display: flex;
+  gap: 14px;
+}
+footer .footer--cont--top p {
+  color: #163a24;
+  text-align: center;
+  font-family: Recoleta;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+}
+footer .footer--cont--bottom {
   padding: 14px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.footer--cont--bottom article {
+footer .footer--cont--bottom article {
   display: flex;
   gap: 14px;
 }
-
-.footer--cont--bottom p {
+footer .footer--cont--bottom p {
   color: #163a24;
   font-family: "Noto Sans";
   font-size: 14px;
@@ -835,8 +726,7 @@ footer {
   font-weight: 400;
   line-height: 21px; /* 150% */
 }
-
-.footer--cont--bottom a {
+footer .footer--cont--bottom a {
   color: #198c36;
   text-align: right;
   font-family: "Noto Sans";
@@ -846,11 +736,6 @@ footer {
   line-height: normal;
   transition: 0.3s;
 }
-
-.footer--cont--bottom a:hover {
+footer .footer--cont--bottom a:hover {
   color: #025116;
-}
-
-.cd-3d-nav-trigger {
-  display: none;
-}
+}/*# sourceMappingURL=preproc.css.map */

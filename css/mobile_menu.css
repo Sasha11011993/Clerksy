@@ -1,7 +1,7 @@
 /* ---Main Components ---- */
 
 /* ---Main Components ---- */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .cd-header {
     -webkit-transition: -webkit-transform 0.5s;
     -moz-transition: -moz-transform 0.5s;
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 992px) {
   .cd-logo {
     float: left;
     margin-top: 0;
@@ -153,7 +153,7 @@
   }
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 992px) {
   .cd-3d-nav {
     /* this is the 3D rotating navigation */
     position: relative;
@@ -288,7 +288,7 @@
   }
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 992px) {
   .cd-marker {
     /* line at the bottom of nav selected item */
     position: absolute;
